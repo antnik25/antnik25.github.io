@@ -1507,8 +1507,13 @@ section.galleryq{
     justify-content: center;
     padding: 30px 10px;
 }
+.popup__link {
+    background: linear-gradient(45deg, rgba(233, 126, 55, 0.7),orange, #e1cc97);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 .popup__content {
-    
+    font-size: 25px;
     color: #000;
     background-color: rgba(254, 254, 254, 0.8);
     box-shadow: 0px 5px 4px rgb(0 0 0 / 25%);
@@ -1618,6 +1623,10 @@ section.galleryq{
 }
     .productq-img-wrapper {
         margin: 0 auto;
+    }
+    .step-img-wrapper {
+        margin: 0 auto;
+        overflow: hidden;
     }
     .productq-content {
         text-align: center;
