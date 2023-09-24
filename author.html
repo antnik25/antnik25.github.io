@@ -11,8 +11,12 @@
     <title>Автор</title>
 </head>
 <body>
+    <div class="loader_bg">
+        <div class="loader"></div>
+        <span class="loader__span">Загрузка данных...</span>
+    </div>
     <div class="cardj">
-        <div class="ci"><img class="card-p" src="../images/3.jpg" alt=""></div>
+        <div class="ci"><img class="card-p" src="../images/photo_2023-09-24_01-14-37-transformed копия.png" alt=""></div>
         <h1 class="card-t"> Никаноров Антон </h1>
         <div class="card-tj">
             <div class="tabs">
@@ -40,8 +44,8 @@
                     aperiam qui ad sapiente.</p>
                 </div>
               </div>
-        <p class="txt1">ГУ ЛНР ЛУВО "Барвинок" г. Луганск</p>
-        <p class="txt2">Веб-программирование, веб-дизайн, верстка.
+        <p class="txt1">Российская Федерация, Луганская Народная Республика, г. Луганск, ГУ ДО ЛНР "Респукликанский центр научно-технического творчества"</p>
+        <p class="txt2">Веб-программирование, веб-дизайн, верстка, ux/ui дизайн.
             </p>
         </div>
     <h2 class="card-subtitlj">Мои контакты:</h2>
@@ -50,5 +54,11 @@
 
     <div class="ci"><a href="index.html" class="main__btn anik">Вернуться на главную</a></div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      setTimeout(function(){
+          $('.loader_bg').fadeToggle();
+      }, 1500);
+  </script>
 </body>
 </html>
