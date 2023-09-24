@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css" />
 	<link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Главная</title>
 </head>
 <body>
+    <div class="index">
+    <div class="loader_bg">
+        <div class="loader"></div>
+        <span class="loader__span">Загрузка данных...</span>
+    </div>
     <header id="header"class="header">
         <a href="index.html" class="header__logo"><span class="c">Д</span>а́ль</a>
         <nav class="header__nav">
@@ -45,7 +49,7 @@
     <section>
         <div class="container">
             <div class="main">
-                <div class="main__text"><h1 class="main__title">Владимир Иванович Даль</h1>
+                <div class="main__text"><h1 class="main__title _anim-items">Владимир Иванович Даль</h1>
                     <p class="main__desc">Русский писатель, этнограф и лексикограф, собиратель фольклора, военный врач.</p><div class="block"><a href="article.html" class="main__btn main__btn__gradient">Перейти к статьям</a></div></div>
                     
                     <div class="main__image">
@@ -83,11 +87,11 @@
                                         <div id="slides">
                                             <div id="overflow">
                                                 <div class="image">
-                                                    <article><img src="../images/1.jpg"></article>
-                                                    <article><img src="../images/2.jpg"></article>
-                                                    <article><img src="../images/3.jpg"></article>
-                                                    <article><img src="../images/4.jpg"></article>
-                                                    <article><img src="../images/5.jpg"></article>
+                                                    <article><img src="../images/46.jpg"></article>
+                                                    <article><img src="../images/sDSC_0435 (1).jpg"></article>
+                                                    <article><img src="../images/44.jpg"></article>
+                                                    <article><img src="../images/47.jpg"></article>
+                                                    <article><img src="../images/45.jpg"></article>
                                                 </div>
                                             </div>
                                         </div>
@@ -232,7 +236,8 @@
                                 <img id="video-story-btn-icon" width="82" height="82" src="../images/play-white.svg" alt="Play" />
                             </button>
                         </div>
-                        <video class="story-video-object" id="video-story">
+                        
+                        <video class="story-video-object" id="video-story" controls>
                             <source src="../video/Владимир Даль и его словарь.mp4" type="video/mp4">
                         </video>
 
@@ -253,15 +258,22 @@
                         <div class="destinations__text">
                             <p>Исследуй творчество небезызвестного автора многих произведений - для детей и взрослых</p>
                         </div>
-                        <a href="article.html" class="main__btn main__btn__gradient" style="display: flex; flex-wrap: wrap; padding: 14px 32px;">Материалы</a>
+                        <a href="materials/ready-html/app/index.html" class="main__btn main__btn__gradient" style="display: flex; flex-wrap: wrap; padding: 14px 32px;">Материалы</a>
                     </div>
 
                     <div class="destinations__slider">
                         <div class="slider">
                             <div class="owl-carousel">
-                                <a href="#popup1" class="header__phone popup__link"><img class="slider__item" src="../images/1.jpg" alt="Slider item" /></a>
-                                <img class="slider__item" src="../images/2.jpg" alt="Slider item" />
-                                <img class="slider__item" src="../images/3.jpg" alt="Slider item" />
+                                <a href="#popup1" class="header__phone popup__link"><img class="slider__item" src="../images/1a.jpg" alt="Slider item" /></a>
+                                <a href="#popup2" class="header__phone popup__link"><img class="slider__item" src="../images/2a.jpg" alt="Slider item" /></a>
+                                <a href="#popup3" class="header__phone popup__link"><img class="slider__item" src="../images/3a.jpg" alt="Slider item" /></a>
+                                <a href="#popup4" class="header__phone popup__link"><img class="slider__item" src="../images/4a.jpg" alt="Slider item" /></a>
+                                <a href="#popup5" class="header__phone popup__link"><img class="slider__item" src="../images/5a.jpg" alt="Slider item" /></a>
+                                <a href="#popup6" class="header__phone popup__link"><img class="slider__item" src="../images/6a.jpg" alt="Slider item" /></a>
+                                
+                            
+                            
+                            
                             </div>
                             <button class="slider__btn slider__btn--prev" >
                                 <img src="../images/prev.png" alt="" style="filter: contrast(160%); opacity: 0.7; border: none;"/>
@@ -275,12 +287,54 @@
             </div>
         </section>
     </section>
+    <div class="container">
+        <section class="quizy">
+        <div class="quiz">
+            <img class="quiz__img" src="../images/be062bbc91f211a216cb7a0790c39f17.jpeg"></img>
+            <div id="title" class="quiz__title">
+                Проверка знаний
+            </div>
+            <div class="quiz__progress-wrap">
+                <div class="quiz__progress">
+                    <div id="progress-fill" class="quiz__progress-fill"></div>
+                </div>
+                <div class="quiz__progress-questions">
+                    <strong id="question-number">1</strong>
+                    <span>/</span>
+                    <span id="total-questions">10</span>
+                </div>
+            </div>
+            <div id="question-wrap" class="quiz__question">
+                <strong id="question-position">1</strong><span id="question">Кто такой Владимир Даль?</span>
+            </div>
+            <div id="answers" class="quiz-answers">
+                <div class="quiz__anwser quiz__anwser_valid">Вариант 1</div>
+                <div class="quiz__anwser">Вариант 2</div>
+                <div class="quiz__anwser quiz__anwser_invalid">Вариант 3</div>
+                <div class="quiz__anwser">Вариант 4</div>
+            </div>
+            <button id="next" class="quiz__btn">
+                Следующий вопрос
+            </button>
+            <div id="result" class="quiz__result">
+                <div class="quiz__result-title"><img src="../images/alt1.png" alt=""></div>
+                <div class="quiz__result-info">
+                    <span>Верных ответов</span>
+                    <br>
+                    <span id="valid-answers" class="quiz__result-num"></span>
+                    <span>из</span>
+                    <span id="result-total-questions" class="quiz__result-num"></span>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
 </div>
     <footer class="footer">
             <div class="contain">
                 <div class="footer__row">
-                    <div class="footer__copyright">Никаноров Антон<br />г.Луганск</div>
-                    <div class="footer__author">ГУ ЛНР "ЛУВО "Барвинок"</div>
+                    <div class="footer__copyright">Никаноров Антон<br />Луганская Народная Республика, Луганск</div>
+                    <div class="footer__author">ГУДО ЛНР "Респукликанский центр <br> научно-технического творчества"</div>
                 </div>
             </div>
     </footer>
@@ -289,11 +343,74 @@
         <div class="popup__body">
             <div class="popup__content">
                 <a href="#header" class="popup__close">Х</a>
-                <div class="popup__title">Это модальное окно</div>
-                <div class="popup__text">Информация</div>
+                <div class="popup__title"><img class="slider__item" src="../images/1a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Сказка "Лиса и заяц"</div>
+                <div class="popup__text"><p>Русская народная сказка «Лиса и заяц» в пересказе Владимира Ивановича Даля известна всем поколениям жителей нашей страны с самого раннего детства. Она стала одной из самых любимых у нашей детворы и взрослых. Мультипликационная адаптация сказки мировым корифеем анимации Юрием Норштейном сделало русскую сказку известной всему миру.
+                </p>
+                    <p>Итак, была у лисы избушка ледяная, а зайца лубяная. Пришла весна, ледяная избушка лисы растаяла и решила она завладеть заячьей избушкой, оставив зайчишку без крова. Многие звери пытались помочь зайцу. И собака, и волк, и даже медведь. Но справиться с хитрой лисой не так-то просто…</div>
+                    </p>
             </div>
         </div>
     </div>
+    <div id="popup2" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">Х</a>
+                <div class="popup__title"><img class="slider__item" src="../images/2a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Сказка "Девочка Снегурочка"</div>
+                <div class="popup__text"><p>Русская народная сказка «Лиса и заяц» в пересказе Владимира Ивановича Даля известна всем поколениям жителей нашей страны с самого раннего детства. Она стала одной из самых любимых у нашей детворы и взрослых. Мультипликационная адаптация сказки мировым корифеем анимации Юрием Норштейном сделало русскую сказку известной всему миру.
+                </p>
+                    <p>Итак, была у лисы избушка ледяная, а зайца лубяная. Пришла весна, ледяная избушка лисы растаяла и решила она завладеть заячьей избушкой, оставив зайчишку без крова. Многие звери пытались помочь зайцу. И собака, и волк, и даже медведь. Но справиться с хитрой лисой не так-то просто…</div>
+                    </p></div>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">Х</a>
+                <div class="popup__title"><img class="slider__item" src="../images/3a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Сказка "Лиса-лапотница"</div>
+                <div class="popup__text"><p>Вашему вниманию представлена сказка Лиса-лапотница В.Даля.
+                    Для чтения взрослыми детям.</p></div>
+        </div>
+    </div>
+    </div>
+    <div id="popup4" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">Х</a>
+                <div class="popup__title"><img class="slider__item" src="../images/4a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Сказка "Лиса и медведь"</div>
+                <div class="popup__text"><p>Вашему вниманию представлена сказка Лиса-лапотница В.Даля.
+                    Для чтения взрослыми детям.</p></div>
+        </div>
+    </div>
+    </div>
+    <div id="popup5" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">Х</a>
+                <div class="popup__title"><img class="slider__item" src="../images/5a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Повесть "Бедовик"</div>
+                <div class="popup__text"><p>Повесть В. И. Даля "Бедовик" была опубликована в 1839 ноду в "Отечественных записках". Главный герой повести – уездный чиновник Евсей Стахеевич Лиров, которого называют "бедовиком", то есть неудачником в жизни. И вместе с тем это человек доброй души и благородных намерений.</p></div>
+        </div>
+    </div>
+</div>
+    <div id="popup6" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">Х</a>
+                <div class="popup__title"><img class="slider__item" src="../images/6a.jpg" alt="Slider item" /></div>
+                <div class="popup__title">Книга "Матросские досуги"</div>
+                <div class="popup__text"><p>Книга "Матросские досуги" написана по поручению великого князя Константина Николаевича для чтения матросам военного флота. Она содержит короткие рассказы из истории отечественного флота, о мироустройстве, о замечательных случаях на море.</p></div>
+        </div>
+    </div>
+</div>
     <div id="img1" class="popup">
         <a href="#header" class="popup__area"></a>
         <div class="popup__body">
@@ -347,15 +464,25 @@
             </div>
         </div>
     </div>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/main.js"></script>
     <script src="../js/throttle.js"></script>
     <script src="../js/carouse.js"></script>
     <script src="../js/burger.js"></script>
-
+    <script src="../js/preloader.js" ></script>
   <script>
     new Slider(0, { autoPlay: true, fade: true })
+    
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      setTimeout(function(){
+          $('.loader_bg').fadeToggle();
+      }, 1500);
+  </script>
+  <script src="../js/data.js"></script>
+  <script src="../js/quiz.js"></script>
 </body>
 </html>
