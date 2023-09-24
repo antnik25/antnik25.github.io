@@ -16,6 +16,10 @@
    <title>Гaлерея</title>
 </head>
 <body>
+  <div class="loader_bg">
+    <div class="loader"></div>
+    <span class="loader__span">Загрузка данных...</span>
+</div>
   <header class="header">
     <a href="index.html" class="header__logo"><span class="c">Д</span>а́ль</a>
     <nav class="header__nav">
@@ -54,51 +58,62 @@
                       <div class="galleryq-item-hover">Посмотреть</div>>
                       <img src="../images/1.jpg" alt="alt">
                     </a>
+                    <a href="../images/3.jpg" class="galleryq-item">
+                      <div class="galleryq-item-hover">Посмотреть</div>>
+                      <img src="../images/3.jpg" alt="alt">
+                    </a>
                     <a href="../images/2.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
                       <img src="../images/2.jpg" alt="alt">
                     </a>
-                    <a href="../images/9.jpg" class="galleryq-item">
+                    <a href="../images/2 (1).jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/9.jpg" alt="alt">
+                      <img src="../images/2 (1).jpg" alt="alt">
                     </a>
                     <a href="../images/5.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
                       <img src="../images/5.jpg" alt="alt">
                     </a>
-                    <a href="../images/8.jpg" class="galleryq-item">
-                      <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/8.jpg" alt="alt">
-                    </a>
                     <a href="../images/6.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
                       <img src="../images/6.jpg" alt="alt">
                     </a>
-                    <a href="../images/1.jpg" class="galleryq-item">
-                      <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/1.jpg" alt="alt">
-                    </a>
-                    <a href="../images/7.jpg" class="galleryq-item">
+                    <a href="../images/11.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
                       <img src="../images/7.jpg" alt="alt">
                     </a>
-                    <a href="../images/2.jpg" class="galleryq-item">
+                    <a href="../images/3 (1).jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/2.jpg" alt="alt">
+                      <img src="../images/3 (1).jpg" alt="alt">
                     </a>
-                    <a href="../images/1.jpg" class="galleryq-item">
+                    <a href="../images/4.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/1.jpg" alt="alt">
+                      <img src="../images/4.jpg" alt="alt">
                     </a>
-                    <a href="../images/2.jpg" class="galleryq-item">
+                    <a href="../images/111.jpg" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/2.jpg" alt="alt">
+                      <img src="../images/111.jpg" alt="alt">
                     </a>
-                    <a href="../images/3.jpg" class="galleryq-item">
+                    <a href="../images/20.JPG" class="galleryq-item">
                       <div class="galleryq-item-hover">Посмотреть</div>>
-                      <img src="../images/3.jpg" alt="alt">
+                      <img src="../images/20.JPG" alt="alt">
                     </a>
-
+                    <a href="../images/18.jpg" class="galleryq-item">
+                      <div class="galleryq-item-hover">Посмотреть</div>>
+                      <img src="../images/18.jpg" alt="alt">
+                    </a>
+                    <a href="../images/imgpreview.jpeg" class="galleryq-item">
+                      <div class="galleryq-item-hover">Посмотреть</div>>
+                      <img src="../images/imgpreview.jpeg" alt="alt">
+                    </a>
+                    <a href="../images/be062bbc91f211a216cb7a0790c39f17.jpeg" class="galleryq-item">
+                      <div class="galleryq-item-hover">Посмотреть</div>>
+                      <img src="../images/be062bbc91f211a216cb7a0790c39f17.jpeg" alt="alt">
+                    </a>
+                    <a href="../images/46.jpg" class="galleryq-item">
+                      <div class="galleryq-item-hover">Посмотреть</div>>
+                      <img src="../images/46.jpg" alt="alt">
+                    </a>
                 </div>
          </section>
         </div>
@@ -108,7 +123,7 @@
             <div class="contain">
                 <div class="footer__row">
                   <div class="footer__copyright">Никаноров Антон<br />г.Луганск</div>
-                  <div class="footer__author">ГУ ЛНР "ЛУВО "Барвинок"</div>
+                  <div class="footer__author">ГУДО ЛНР "Респукликанский центр <br> научно-технического творчества"</div>
               </div>
             </div>
     </footer>
@@ -132,6 +147,12 @@
         enabled: true
       }
     });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+      setTimeout(function(){
+          $('.loader_bg').fadeToggle();
+      }, 1500);
   </script>
 </body>
 </html>
